@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/*header*/
+
+header {
+        width: 100%;
+        height: 290px;
+}
+
+#header__top {
+        width: 1200px;
+        height: 10px;
+}
+
+/*로그인 박스*/
+.login {
+        width: 1200px;
+}
+
+.login__box {
+        width: 360px;
+        height: 20px;
+        float: right;
+        margin: 5px;
+        display: flex;
+        font-size: 11px;
+}
+
+#header__bottom {
+        width: 1200px;
+        height: 10px;
+}
+
+.header__box {
+        width: 1200px;
+        display: flex;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+
+}
+
+/*검색창*/
+.search {
+        height: 26px;
+        display: block;
+        margin: 50px 0 0 30px;
+        border-bottom: 2px solid #adadad;
+}
+
+.search>input {
+        margin: 0px;
+        vertical-align: middle;
+        border: none;
+}
+
+.search>img {
+        width: 18px;
+        height: 18px;
+        align-content: center;
+        padding: 0px auto;
+}
+
+/*만나몰 헤더 로고*/
+.header__logo {
+        width: 380px;
+        height: 150px;
+}
+
+.header__logo>a>img {
+        width: 380px;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+}
+
+.recipe__story {
+        width: 300px;
+        height: 50px;
+        float: right;
+        margin: 50px 30px 0 0;
+}
+
+.recipe__story>ul {
+        float: right;
+}
+
+.recipe__story>ul>li {
+        font-size: 12px;
+        margin: 0 10px;
+        float: left;
+        color: #666666;
+}
+
+/*nav*/
+nav {
+        width: 100%;
+        height: 50px;
+        margin-top: 200px;
+        text-align: center;
+        display: inline-block;
+        background-color: white;
+}
+
+/*menu*/
+
+/* 내비게이션 메뉴 박스*/
+#nav__menu {
+        width: 1200px;        
+        font-size: 16px;
+}
+
+#nav__menu__box {
+        width: 1200px;
+        margin:10px 0 0 0px; 
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+}
+
+/* 내비게이션 메뉴 박스 메인 - (수입 과일 / 못난이 과일 등) */
+#nav__menu__box__main>li {
+        width: 150px;
+        float: left;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        color: lightgray;
+}
+
+/* 내비게이션 메뉴 박스 서브 - ul */
+#nav__menu__box__sub {
+        width: 150px;
+        background-color: #ccc;
+        display: none;
+        position: absolute;
+        top: 40px; 
+        left: 0;
+        z-index: 999;
+}
+
+#nav__menu__box__sub>li {
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease;
+        line-height: 50px;
+
+}
+
+#nav__menu__box__sub>li>a:hover {
+        background-color: gray;
+        display: block;
+}
+
+/*footer*/
+footer {
+        width: 100%;
+        height: 500px;
+        background-color: #666666;
+        color: white;
+}
+
+#footer {
+        width: 1200px;
+}
+
+.company__box {
+        height: 100px;
+}
+
+.info {
+        width: 1200px;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+}
+
+.company__logo {
+        width: 305px;
+        height: 152px;
+        margin: 0px;
+        display: inline-block;
+}
+
+.company__logo>a>img {
+        width: 240px;
+        height: 150px;
+}
+
+/*고객센터*/
+.costumer__service {
+        width: 305px;
+        height: 152px;
+        margin: 0px;
+        padding: 0 45px;
+        display: inline-block;
+        border-left: 1px solid gray;
+}
+
+.costumer__service>h3 {
+        height: 34px;
+}
+
+.costumer__service>p {
+        font-size: 11px;
+        line-height: 1.8;
+}
+
+/*무통장입금*/
+.deposit {
+        width: 305px;
+        height: 152px;
+        margin: 0px;
+        padding: 0 45px;
+        float: left;
+        border-left: 1px solid gray;
+}
+
+/*무통장입금 - 무통장입금*/
+.deposit>h3 {
+        width: 100%;
+        height: 34px;
+        padding-bottom: 5px;
+}
+
+/*무통장입금 - 무통장입금*/
+.deposit__info {
+        width: 305px;
+        height: 118px;
+}
+
+/*무통장입금 - 계좌번호 틀*/
+.deposit__bank {
+        width: 160px;
+        height: 118px;
+        display: inline-block;
+}
+
+.deposit__bank>strong {
+        width: 160px;
+        height: 40px;
+}
+
+.deposit__bank>p {
+        width: 160px;
+        height: 40px;
+        font-size: 11px;
+        line-height: 1.8;
+        display: inline-block;
+}
+
+/*무통장입금 - 에스크로 이니페이*/
+.deposit__bank__img {
+        width: 60px;
+        height: 118px;
+        display: inline-block;
+        float: left;
+}
+
+/*무통장입금 - 에스크로 이니페이 이미지*/
+.deposit__bank__img>img {
+        width: 60px;
+        height: 60px;
+}
+
+/*도움*/
+.help {
+        width: 260px;
+        height: 152px;
+        margin: 0px;
+        display: inline-block;
+}
+
+.help__box {
+        width: 260px;
+        height: 34px;
+}
+
+.help>ul>li {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+}
+
+.company__info {
+        width: 1200px;
+        height: 100px;
+        line-height: 1.8;
+}
+
+.company__info>ul {
+        width: 300px;
+        padding: 13px 0 0 13px;
+        display: block;
+        font-size: 11px;
+}
+
+.company__info>ul>li {
+        width: 50%;
+        float: left;
+}
+
+.company__info__box {
+        width: 1200px;
+        height: 130px;
+}
+
+.company__adress>ul {
+        text-align: center;
+        font-size: 11px;
+}

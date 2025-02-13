@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+
+
+/*slider*/
+#slider {
+    width: 100%;
+    height: 660px;
+    overflow: visible;
+}
+
+.slider__wrap {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+.slider__img {
+    width: 2000px;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+
+.slider__img:not(:first-child) {
+    display: none;
+}
+
+.slider__inner {
+    display: flex;
+}
+
+/*이전 슬라이드 버튼*/
+.prev {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    height: 80px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.2); 
+    border-radius: 0 10px 10px 0px; 
+    vertical-align: middle;
+}
+
+/*다음 슬라이드 버튼*/
+.next {
+    right: 0;
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    height: 80px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.2); 
+    border-radius: 10px 0px 0px 10px;
+    vertical-align: middle;
+}
+
+/*section*/
+section {
+    width: 1200px;
+    height: 100%;
+}
+
+#title {
+    margin: 20px 0 20px 0;
+}
+
+#title>h1 {
+    text-align: center;
+    color: black;
+}
+
+/*금주의 추천상품*/
+.weekly {
+    width: 1200px;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weekly_box {
+    width: 380px;
+    height: 480px;
+    margin: 10px;
+}
+
+
+/*못난이 과일*/
+.ugly {
+    width: 1200px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 100px 0;
+}
+
+.ugly__img {
+    width: 280px;
+    height: 380px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.ugly__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.ugly__img>a>img {
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+/*해외 직수입 과일*/
+.import {
+    width: 1200px;
+    height: 1680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 100px 0;
+}
+
+.import__img {
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.import__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.import__img>a>img {
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+.import__img>a>strong {
+    font-size: 15px;
+}
+
+.import__img>p {
+    line-height: 26px;
+}
+
+.import__img>span {
+    line-height: 28px;
+}
+
+/*국산 제철 먹거리*/
+.season {
+    width: 1200px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 100px 0;
+}
+
+.season__box {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.season__img {
+    width: 280px;
+    height: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.season__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.season__img>a>img {
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+.namecolor {
+    color: green;
+}
+
+.season__img>a>strong {
+    font-size: 15px;
+}
+
+.season__img>p {
+    line-height: 26px;
+}
+
+.season__img>span {
+    line-height: 26px;
+}
+
+/*파트너스*/
+.partners {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 100px 0;
+}
+
+.partners__img {
+    width: 280px;
+    height: 340px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.partners__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.partners__img>a>img {
+    width: 280px;
+    height: 285px;
+    border-radius: 20px;
+}
+
+.partners__img>a>strong {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*카테고리*/
+.category {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 100px 0;
+}
+
+.category__img {
+    width: 380px;
+    height: 250px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.category__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.category__img>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*만나몰 이야기*/
+.story {
+    width: 1200px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.story__box {
+    width: 290px;
+    height: 520px;
+    margin: 5px auto;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.story__box__img {
+    width: 280px;
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.24s;
+}
+
+.story__box__img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.story__box__img>a>img {
+    width: 260px;
+    height: 380px;
+}
+
+.story__box>h4> {
+    font-size: 11px;
+    color: #000;
+}
+
+.story__catchphrase {
+    font-size: 11px;
+    float: left;
+    color: #000;
+}
+
+.story__box>p {
+    font-size: 11px;
+    color: #000;
+}
