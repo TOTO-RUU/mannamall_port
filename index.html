@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>만나몰 - 온라인 팜 마켓</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+<!--메뉴바-->
+<script src="js/nav_menu.js"></script>
+
+<!--슬라이더-->
+<script src="js/slider.js"></script>
+
+<!--금주의 추천상품 js-->
+<script src="js/weekly.js"></script>
+
+<!--못난이 과일 js-->
+<script src="js/ugly.js"></script>
+
+    
+<!--해외 직수입 과일 js/json-->
+<script src="js/import.js"></script>
+
+<!--국산 제철 먹거리 js/json-->
+<script src="js/season.js"></script>
+
+<!--파트너스 js/json-->
+<script src="js/partners.js"></script>
+
+<!--만나몰 이야기 js/json-->
+<script src="js/story.js"></script>
+
+</head>
+
+<body>
+<header>
+
+<!--헤더 시작-->
+<div id="header__top"></div>
+
+<!--로그인  / 회원가입 / 마이페이지 / 장바구니 / 고객센터-->
+<div class="login">
+    <ul class="login__box">
+        <li><a href="#">로그인</a></li>
+        <span>|</span>
+        <li><a href="#">회원가입</a></li>
+        <span>|</span>
+        <li><a href="#">마이페이지</a></li>
+        <span>|</span>
+        <li><a href="#">장바구니</a></li>
+        <span>|</span>
+        <li><a href="#">고객센터</a></li>
+    </ul>
+</div>
+
+
+<div id="header__bottom"></div>
+
+<!--검색창 / 만나몰 로고 / 만나몰 레시피&스토리-->
+<div class="header__box">
+
+    <!--검색창-->
+    <div class="search">
+        <input type="text" id="search_form" name="keyword" title="과일 전문 쇼핑몰 만나몰" placeholder="과일 전문 쇼핑몰 만나몰"
+            autocomplete="off">
+        <input type="image" src="img/btn_top_search.png">
+    </div>
+    
+    <!--만나몰 로고-->
+    <div class="header__logo">
+        <a href="#"><img src="img/header_logo.png" alt=""></a>
+    </div>
+
+    <!--만나몰 레시피&스토리-->
+    <div class="recipe__story">
+        <ul>
+            <li><a href="#">레시피</a></li>
+            <li><a href="#">m 스토리</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<nav>
+    
+    <div id="nav__menu">
+        
+        <!--메인 메뉴바-->
+        <div id="nav__menu__box">
+            <ul id="nav__menu__box__main">
+                <li><a href="#"><img src="img/btn_allmenu_open.png" alt="ALL"> </a></li>
+                <li><a href="#">수입과일</a>
+                    <!--서브 메뉴바 -->
+                    <ul id="nav__menu__box__sub">
+                        <li><a href="#">시트러스계</a></li>
+                        <li><a href="#">바나나</a></li>
+                        <li><a href="#">석류</a></li>
+                        <li><a href="#">아보카도</a></li>
+                        <li><a href="#">용과</a></li>
+                        <li><a href="#">체리</a></li>
+                        <li><a href="#">파인애플</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="#">못난이과일</a>
+                    <!--서브 메뉴바 -->
+                    <ul id="nav__menu__box__sub">
+                        <li><a href="#">오렌지</a></li>
+                        <li><a href="#">자몽</a></li>
+                        <li><a href="#">라임</a></li>
+                        <li><a href="#">아보카도</a></li>
+                        <li><a href="#">석류</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">국산과일.채소</a>
+                    <!--서브 메뉴바 -->
+                    <ul id="nav__menu__box__sub">
+                        <li><a href="#">단감</a></li>
+                        <li><a href="#">배추</a></li>
+                        <li><a href="#">복숭아</a></li>
+                        <li><a href="#">방울토마토</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">비즈니스몰</a></li>
+                <li><a href="#">썬키스트견과</a>
+                    <!--서브 메뉴바 -->
+                    <ul id="nav__menu__box__sub">
+                        <li><a href="#">아몬드</a></li>
+                        <li><a href="#">호두</a></li>
+                        <li><a href="#">선물세트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">파트너스</a></li>
+                <li><a href="#"><img src="img/btn_arrow_right_over.png" alt=""> </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!--슬라이더-->
+<div id="slider">
+<div class="slider__wrap">
+    <div class="slider__img">
+        <ul class="slider__inner">
+            <li><a href="#"><img src="img/2025newyeargift.jpg" alt="설선물"></a></li>
+            <li><a href="#"><img src="img/slider_01_Avocado.jpg" alt="슬라이더아보카도"></a></li>
+            <li><a href="#"><img src="img/slider_02_pomegranate.jpg" alt="슬라이더석류"></a></li>
+            <li><a href="#"><img src="img/slider_03_redGrapefruit.jpg " alt="슬라이더레드자몽"></a></li>
+            <li><a href="#"><img src="img/slider_04_Sweet potato.jpg" alt="슬라이더고구마"></a></li>
+            <li><a href="#"><img src="img/slider_05_Orange.jpg" alt="슬라이더오렌지"></a></li>
+            <li><a href="#"><img src="img/slider_06_Mandarin orange.jpg" alt="슬라이더감귤"></a></li>
+            <li><a href="#"><img src="img/slider_07_Remon.jpg" alt="슬라이더레몬"></a></li>
+            <li><a href="#"><img src="img/slider_08_Lime.jpg" alt="슬라이더라임"></a></li>
+            <li><a href="#"><img src="img/slider_09_Banana.jpg" alt="슬라이더바나나"></a></li>
+        </ul>
+    </div>
+    <span class="prev">&lt;</span>
+    <span class="next">&gt;</span>
+</div>
+</div>
+
+<section>
+
+<!--금주의 추천상품-->
+<div id="title">
+    <h1>금주의 추천상품</h1>
+</div>
+
+<div class="weekly">
+    <div class="weekly_box"></div>
+    <div class="weekly_box"></div>
+    <div class="weekly_box"></div>
+</div>
+
+<!--못난이 과일-->
+<div id="title">
+    <h1>못난이 과일</h1>
+</div>
+
+<div class="ugly">
+    <div class="ugly__img"><a href="#"><img src="img/ugly_bluegrapefruit.jpg" alt=""></a>
+        <a href="#"><strong>[못난이] 메로골드(청자몽) 6개/12개<br>[순차출고]</strong><br></a>
+        <p><del>11,900원</del> 9,900원</p>
+        <span><img src="img/goods_icon_ugly.gif" alt=""></span>
+        <span><img src="img/good_icon_new.gif " alt=""></span>
+    </div>
+    <div class="ugly__img"><a href="#"><img src="img/ugly_lemon.jpg" alt=""></a>
+        <a href="#"><strong>[못난이] 레몬(20개/40개/50개)<br>[순차출고]</strong><br></a>
+        <p><del>15,900원</del> 9,900원</p>
+        <span><img src="img/goods_icon_ugly.gif" alt=""></span>
+        <span><img src="img/good_icon_special.gif " alt=""></span>
+        <span><img src="img/good_icon_popular.gif" alt=""></span>
+    </div>
+    <div class="ugly__img"><a href="#"><img src="img/ugly_lime.jpg" alt=""></a>
+        <a href="#"><strong>[못난이] 라임(1kg/2kg/4kg/8kg)<br>[순차출고]</strong></a>
+        <p><del>10,900원</del> 9,900원</p>
+        <span><img src="img/goods_icon_ugly.gif" alt=""></span>
+        <span><img src="img/good_icon_special.gif " alt=""></span>
+    </div>
+    <div class="ugly__img"><a href="#"><img src="img/ugly_orange.jpg" alt=""></a>
+        <a href="#"><strong>[못난이] 레드 자몽(8개/16개)<br>[순차출고]</strong><br></a>
+        <p><del>14,900원</del> 9,900원</p>
+        <span><img src="img/goods_icon_ugly.gif" alt=""></span>
+    </div>
+</div>
+
+<!--해외 직수입 과일 시작-->
+<div id="title">
+    <h1>해외 직수입 과일</h1>
+</div>
+<div class="import">
+    <div class="import__img"><a href="#"><img src="img/import_avocado.jpg" alt=""></a>
+        <a href="#"><strong>아보카도 8개/15개</strong></a>
+        <p><del>20,900원</del> 10,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_banana.jpg" alt=""></a>
+        <a href="#"><strong>만나 바나나 2송이 2.4kg</strong></a>
+        <p>10,900원</p>
+        <span><img src="img/goods_icon_order.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif" alt=""></span>
+        <span><img src="img/good_icon_popular.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_coconut_box.png" alt=""></a>
+        <a href="#"><strong>코코넛 20과 1박스(17kg)</strong></a>
+        <p><del>35,900원</del> 26,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_crimson.jpg" alt=""></a>
+        <a href="#"><strong>씨없는 적포도(크림슨) XL사이즈 1.8kg</strong></a>
+        <p><del>20,900원</del> 10,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+
+    <!--해외 직수입 과일 (1)-->
+    <div class="import__img"><a href="#"><img src="img/import_dragonfruit.jpg" alt=""></a>
+        <a href="#"><strong>용과 10과 3개/6개</strong></a>
+        <p><del>15,900원</del> 12,900원</p>
+        <span><img src="img/goods_icon_order.gif" alt=""></span>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif" alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_dragonfruit_red.jpg" alt=""></a>
+        <a href="#"><strong>레드 용과 10과 3개/6개</strong></a>
+        <p><del>17,900원</del> 15,900원</p>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_grapefruit_red.jpg" alt=""></a>
+        <a href="#"><strong>이스라엘 레드 자몽 8개/12개</strong></a>
+        <p><del>21,900원</del> 16,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_grapefruit_red_box.jpg" alt=""></a>
+        <a href="#"><strong>이스라엘 레드 자몽 20개(1박스)</strong></a>
+        <p><del>39,900원</del> 34,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+
+    <!--해외 직수입 과일 (2)-->
+    <div class="import__img"><a href="#"><img src="img/import_lemon.jpg" alt=""></a>
+        <a href="#"><strong>미국 썬키스트 레몬 140과 15개/24개</strong></a>
+        <p><del>15,900원</del> 12,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_lemon_box.jpg" alt=""></a>
+        <a href="#"><strong>미국 썬키스트 레몬 140과 60개(1박스)</strong></a>
+        <p><del>39,900원</del> 36,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_lime.jpg" alt=""></a>
+        <a href="#"><strong>라임 1kg/2kg/3kg/4kg/6kg/8kg</strong></a>
+        <p><del>20,900원</del> 10,900원</p>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+        <span><img src="img/good_icon_popular.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_muscat.jpg" alt=""></a>
+        <a href="#"><strong>씨없는 청포도 XL사이즈 1.8kg/3.6kg</strong></a>
+        <p><del>20,900원</del> 10,900원</p>
+        <span><img src="img/good_icon_new.gif" alt=""></span>
+    </div>
+
+    <!--해외 직수입 과일 (3)-->
+    <div class="import__img"><a href="#"><img src="img/import_orange.jpg" alt=""></a>
+        <a href="#"><strong>미국 네이블 오렌지 88과 14개/24개</strong></a>
+        <p><del>20,900원</del> 10,900원</p>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_pineapple.jpg" alt=""></a>
+        <a href="#"><strong>만나 골드 파인애플 5수 2개</strong></a>
+        <p><del>20,900원</del> 14,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_popular.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_pineapple_stick.jpg" alt=""></a>
+        <a href="#"><strong>[가격행사]후레쉬컷 파인애플 스틱형 1kg</strong></a>
+        <p>1,900원</p>
+        <span><img src="img/good_icon_sale.gif" alt=""></span>
+        <span><img src="img/good_icon_recomm.gif " alt=""></span>
+    </div>
+    <div class="import__img"><a href="#"><img src="img/import_pomegranate.jpg" alt=""></a>
+        <a href="#"><strong>미국 석류 11과 5개/8개</strong></a>
+        <p><del>28,900원</del> 24,900원</p>
+        <span><img src="img/good_icon_recomm.gif" alt=""></span>
+        <span><img src="img/good_icon_new.gif " alt=""></span>
+    </div>
+</div>
+
+<!--국산 제철 먹거리 시작-->
+<div id="title">
+    <h1>국산 제철 먹거리</h1>
+</div>
+<div class="season">
+    
+    <!--국산 제철 먹거리 박스-->
+    <div class="season__box">
+
+        <!--국산 제철 먹거리(1)-->
+        <div class="season__img"><a href="#"><img src="img/season_cherrytomato.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[자연터]<br></strong>
+                <strong>무지개 컬러 방울 토마토 750g 2팩/4팩</strong></a>
+            <p><del>25,900원</del> 21,900원</p>
+            <span><img src="img/good_icon_recomm.gif" alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_mandarinorange.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]<br></strong>
+                <strong>제주 조생 감귤 2.5kg/4.5kg(2S-2L)</strong></a>
+            <p><del>13,900원</del> 12,900원</p>
+            <span><img src="img/good_icon_recomm.gif" alt=""></span>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_napacabbage.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]</strong><strong> HACCP 인증</strong><br>
+                <strong>절임배추/양념 3kg/5kg/10kg/20kg</strong></a>
+            <p><del>19,900원</del> 16,900원</p>
+            <span><img src="img/good_icon_recomm.gif" alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_passionfruit.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]</strong><strong> 무농약 인증</strong><br>
+                <strong>백향과 패션후르츠(대/특대사이즈) 1kg</strong></a>
+            <p><del>19,900원</del> 14,900원</p>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+
+        <!--국산 제철 먹거리 (2)-->
+        <div class="season__img"><a href="#"><img src="img/season_peach_white.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]<br></strong>
+                <strong>햇사레 백도 복숭아 2kg(5~6과)</strong></a>
+            <p>22,900원</p>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_peach_yellow.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]<br></strong>
+                <strong>햇사레 황도 복숭아 2kg(5~6과)</strong></a>
+            <p>22,900원</p>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_persimmon.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]<br></strong>
+                <strong>창원 단감 2.5kg/5kg(소과~대과)</strong></a>
+            <p><del>15,900원</del> 12,900원</p>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+        <div class="season__img"><a href="#"><img src="img/season_sweetpotato.jpg" alt=""></a>
+            <a href="#"><strong class="namecolor">[산지 직배송]<br></strong>
+                <strong>태안 호박고구마, 꿀고구마 3kg/5kg</strong></a>
+            <p><del>15,900원</del> 12,900원</p>
+            <span><img src="img/good_icon_recomm.gif" alt=""></span>
+            <span><img src="img/good_icon_new.gif " alt=""></span>
+        </div>
+    </div>
+</div>
+
+<!--파트너스 시작-->
+<div id="title">
+    <h1>파트너스</h1>
+</div>
+<div class="partners">
+
+    <!--파트너스 (1)-->
+    <div class="partners__img"><a href="#"><img src="img/partners_wildflowerhoney.jpg" alt=""></a>
+        <a href="#"><strong>보나 야생화 벌꿀 300g</strong></a>
+        <p>19,000원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_beepollen.jpg" alt=""></a>
+        <a href="#"><strong>보나비폴렌 120g</strong></a>
+        <p>15,000원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_hijiki.jpg" alt=""></a>
+        <a href="#"><strong>완도의 신선한 염장 톳 200g*5팩</strong></a>
+        <p>16,800원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_eckloniastolonifera.jpg" alt=""></a>
+        <a href="#"><strong>꼬들한 식감 염장 곰피 200g*5팩</strong></a>
+        <p>12,300원</p>
+    </div>
+
+    <!--파트너스 (2)-->
+    <div class="partners__img"><a href="#"><img src="img/partners_abalone.jpg" alt=""></a>
+        <a href="#"><strong>명품 완도 참전복 1kg</strong></a>
+        <p>36,000원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_penshell.jpg" alt=""></a>
+        <a href="#"><strong>달달한 국산 자연산 키조개 관자 500g</strong></a>
+        <p>22,500원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_purpplebutterclam.jpg" alt=""></a>
+        <a href="#"><strong>바다의 보물 자연산 대합 1kg</strong></a>
+        <p>14,900원</p>
+    </div>
+    <div class="partners__img"><a href="#"><img src="img/partners_turbansnail.jpg" alt=""></a>
+        <a href="#"><strong>달큰한 살이 가득 자연산 참소라 1kg</strong></a>
+        <p>19,900원</p>
+    </div>
+</div>
+
+<!-- 카테고리 -->
+<div class="category">
+    <div class="category__img"><a href="#"><img src="img/categor_import.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_madeinkorea.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_partners.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_seafood.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_gift.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_coffeedessert.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_conveniencefood.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/category_fairtrade.jpg" alt=""></a></div>
+    <div class="category__img"><a href="#"><img src="img/categor_nuts.jpg" alt=""></a></div>
+</div>
+
+<!--만나몰 이야기-->
+<div id="title">
+    <h1>만나몰 이야기</h1>
+</div>
+<div class="story">
+    <div class="story__box">
+        <div class="story__box__img"><a href="#"><img src="img/story1.jpg" alt=""></a></div>
+        <h4>만나몰, 플로리다 자몽<br>5+5 특가 이벤트</h4>
+        <p class="story__catchphrase">m-STORY</p><br>
+        <p>만나몰은 상품의 품질뿐 아니라<br>브랜드 스토리까지 귀를 기울입니다.</p>
+    </div>
+    <div class="story__box">
+        <div class="story__box__img"><a href="#"><img src="img/story2.jpg" alt=""></a></div>
+        <h4>프리미엄 과일과 생화 부케를 담은<br>만나아트 추석선물세트 출시</h4>
+        <p class="story__catchphrase">m-STORY</p><br>
+        <p>만나몰은 상품의 품질뿐 아니라<br>브랜드 스토리까지 귀를 기울입니다.</p>
+    </div>
+    <div class="story__box">
+        <div class="story__box__img"><a href="#"><img src="img/story3.png" alt=""></a></div>
+        <h4>프리미엄 과일과 생화를<br>디자인에 담은 만나아트 출범</h4>
+        <p class="story__catchphrase">m-STORY</p><br>
+        <p>만나몰은 상품의 품질뿐 아니라<br>브랜드 스토리까지 귀를 기울입니다.</p>
+    </div>
+    <div class="story__box">
+        <div class="story__box__img"><a href="#"><img src="img/story4.jpg" alt=""></a></div>
+        <h4>웨이처치 러브더월드 감사편지</h4><br>
+        <p class="story__catchphrase">m-STORY</p><br>
+        <p>만나몰은 상품의 품질뿐 아니라<br>브랜드 스토리까지 귀를 기울입니다.</p>
+    </div>
+</div>
+</section>
+
+<footer>
+<div id="footer">
+    <div class="company">
+        <div class="company__box"></div>
+        <div class="info">
+
+            <!-- 만나몰 로고 -->
+            <div class="company__logo">
+                <a href="#">
+                    <img src="img/footer_logo_art.png" alt="">
+                </a>
+            </div>
+
+            <!-- 만나몰 고객센터 -->
+            <div class="costumer__service">
+                <h3>고객센터</h3>
+                <strong style="font-size: 19px; line-height: 1.8;">070-7727-6551~2</strong>
+                <p>주중 : 10시~17시</p>
+                <p>점심시간 : 12시~13시</p>
+                <p>주말 : 휴무</p>
+                <p>공휴일 : 휴무</p>
+            </div>
+
+            <!-- 만나몰 계좌정보 -->
+            <div class="deposit">
+                <h3>무통장입금</h3>
+                <div class="deposit__info">
+                    <div class="deposit__bank">
+                        <strong style="font-size: 19px; line-height: 1.8;">3010157336821</strong>
+                        <p>농협<br>예금주 :(주)진원에프엠</p>
+                    </div>
+                    <div class="deposit__bank__img">
+                        <img src="img/escrow_60x60_gray.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 만나몰 도움말 -->
+            <div class="help">
+                <div class="help__box"></div>
+                <ul>
+                    <li><a href="#"><img src="img/btn_footer_quick_menu01.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/btn_footer_quick_menu02.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/btn_footer_quick_menu03.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 만나몰 회사 소개 -->
+        <div class="company__info">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">입점/제휴 문의</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 만나몰 회사 정보 -->
+    <div id="company__info__box"></div>
+    <div class="company__adress">
+        <ul>
+            <li><strong>(주진원에프엠)</strong>인천광역시 서구 건지로250번길 50 (가좌동)</li><br>
+            <li>대표: 오충화
+                <span></span>
+                사업자등록번호 : 109-86-02390 <a href="#" onclick="">사업자정보확인 ></a>
+                <span></span>
+                통신판매업신고번호 : 2013-인천서구-0183
+                <span></span>
+                개인정보관리자 : 오충화
+            </li>
+            <li>
+                대표번호 : 070-7727-6551
+                <span></span>
+                팩스번호 : 02-715-0712
+                <span></span>
+                메일 : manna@jinwon.kr
+            </li>
+            <br>
+            <li>copyright (c) <strong>Mannamall</strong>  all rights reserved.</li>
+        </ul>
+    </div>
+</div>
+
+
+</footer>
+</body>
+
+</html>
