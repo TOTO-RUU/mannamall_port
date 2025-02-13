@@ -1,0 +1,82 @@
+[
+    {
+        "title": "아보카도 8개/15개",
+        "price": "10,900원",
+        "url": "import_avocado.jpg"
+    },
+    {
+        "title": "만나 바나나 2송이 2.4kg",
+        "price": "10,900원",
+        "url": "import_banana.jpg"        
+    },
+    {
+        "title": "코코넛 20과 1박스(17kg)",
+        "price": "26,900원",
+        "url": "import_coconut_box.png"
+    },
+    {
+        "title": "씨없는 적포도(크림슨) XL사이즈 1.8kg",
+        "price": "10,900원",
+        "url": "import_crimson.jpg"
+    },
+    {
+        "title": "용과 10과 3개/6개",
+        "price": "12,900원",
+        "url": "import_dragonfruit.jpg"
+    },
+    {
+        "title": "레드 용과 10과 3개/6개",
+        "price": "15,900원",
+        "url": "import_dragonfruit_red.jpg"
+    },
+    {
+        "title": "이스라엘 레드 자몽 8개/12개",
+        "price": "16,900원",
+        "url": "import_grapefruit_red.jpg"
+    },
+    {
+        "title": "이스라엘 레드 자몽 20개(1박스)",
+        "price": "34,900원",
+        "url": "import_grapefruit_red_box.jpg"
+    },
+    {
+        "title": "미국 썬키스트 레몬 140과 15개/24개",
+        "price": "12,900원",
+        "url": "import_lemon.jpg"
+    },    
+    {
+        "title": "미국 썬키스트 레몬 140과 60개(1박스)",
+        "price": "36,900원",
+        "url": "import_lemon_box.jpg"
+    },
+    {
+        "title": "라임 1kg/2kg/3kg/4kg/6kg/8kg",
+        "price": "10,900원",
+        "url": "import_lime.jpg"
+    },
+    {
+        "title": "씨없는 청포도 XL사이즈 1.8kg/3.6kg",
+        "price": "10,900원",
+        "url": "import_muscat.jpg"
+    },
+    {
+        "title": "미국 네이블 오렌지 88과 14개/24개",
+        "price": "10,900원",
+        "url": "import_orange.jpg"
+    },
+    {
+        "title": "만나 골드 파인애플 5수 2개g",
+        "price": "14,900원",
+        "url": "import_pineapple.jpg"
+    },
+    {
+        "title": "[가격행사]후레쉬컷 파인애플 스틱형 1kg",
+        "price": "10,900원",
+        "url": "import_pineapple_stick.jpg"
+    },
+    {
+        "title": "미국 석류 11과 5개/8개",
+        "price": "24,900원",
+        "url": "import_pomegranate.jpg"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "title": "[자연터] <br> 무지개 컬러 방울 토마토 750g 2팩/4팩",
+        "price": "21,900원",
+        "url": "season_cherrytomato.jpg"
+    },
+    {
+        "title": "[산지 직배송] <br> 제주 조생 감귤 2.5kg/4.5kg(2S-2L)",
+        "price": "12,900원",
+        "url": "season_mandarinorange.jpg"        
+    },
+    {
+        "title": "[산지 직배송] HACCP 인증 <br> 절임배추/양념 3kg/5kg/10kg/20kg",
+        "price": "16,900원",
+        "url": "season_napacabbage.jpg"
+    },
+    {
+        "title": "[산지 직배송] 무농약 인증 <br> 백향과 패션후르츠(대/특대사이즈) 1kg",
+        "price": "14,900원",
+        "url": "season_passionfruit.jpg"
+    },
+    {
+        "title": "[산지 직배송] 햇사레 백도 복숭아 2kg(5~6과)",
+        "price": "22,900원",
+        "url": "season_peach_white.jpg"
+    },
+    {
+        "title": "[산지 직배송] 햇사레 황도 복숭아 2kg(5~6과)",
+        "price": "22,900원",
+        "url": "season_peach_yellow.jpg"
+    },
+    {
+        "title": "[산지 직배송] 창원 단감 2.5kg/5kg(소과~대과)",
+        "price": "12,900원",
+        "url": "season_persimmon.jpg"
+    },
+    {
+        "title": "[산지 직배송] 태안 호박고구마, 꿀고구마 3kg/5kg",
+        "price": "12,900원",
+        "url": "season_sweetpotato.jpg"
+    }
+]
